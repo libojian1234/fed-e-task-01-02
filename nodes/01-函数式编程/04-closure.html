@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>closure</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function markpower(power){
+        return function(num){
+            return Math.pow(num,power)
+        }
+    }
+    const pow2 = markpower(2);
+    const pow3 = markpower(3);
+    console.log(pow2(2))
+    console.log(pow2(3))
+    console.log(pow3(5))
+</script>
+
+</html>

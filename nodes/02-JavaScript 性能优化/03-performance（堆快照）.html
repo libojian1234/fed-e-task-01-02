@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Add</button>
+</body>
+<script>
+    var tmpEle
+
+    function test () {
+        var ul = document.createElement('ul')
+        for (let i=0;i<10;i++){
+            var li = document.createElement('li')
+            ul.appendChild(li)
+            document.body.appendChild(document.createElement('p'))
+        }
+        tmpEle = ul
+    }
+    document.getElementById('btn').addEventListener('click',test)
+</script>
+</html>
